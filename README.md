@@ -3,6 +3,8 @@ This is a Symfony Bundle for the Owasys OWA11 tracking device. It helps to wrap 
 
 **Notice**: This bundle is still work in progress!
 
+**Please open an issue or a PR if you want to contribute to the project.**
+
 Installation
 ============
 
