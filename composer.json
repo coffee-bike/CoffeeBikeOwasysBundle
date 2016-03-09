@@ -16,7 +16,7 @@
 
     ],
     "autoload": {
-        "psr-4": { "CoffeeBike\\OwasysBundle\\": "" },
+        "psr-4": { "CoffeeBike\\OwasysBundle\\": "" }
     },
     "require": {
         "php": ">=5.5.9",
