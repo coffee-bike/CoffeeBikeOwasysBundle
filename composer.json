@@ -12,7 +12,7 @@
         {
             "name": "Jannik Kroeger",
             "email": "jannik.kroeger@coffee-bike.com"
-        },
+        }
 
     ],
     "autoload": {
