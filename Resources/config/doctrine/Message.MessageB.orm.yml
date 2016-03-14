@@ -1,0 +1,14 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageB:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        byeCode:
+            type: integer
+            column: bye_code
+    lifecycleCallbacks: {  }

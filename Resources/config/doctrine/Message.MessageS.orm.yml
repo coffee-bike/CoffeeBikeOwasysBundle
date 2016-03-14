@@ -1,0 +1,28 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageS:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        duration:
+            type: integer
+        vPeak:
+            type: float
+            column: v_peak
+        startLat:
+            type: float
+            column: start_lat
+        startLon:
+            type: float
+            column: start_lon
+        endLat:
+            type: float
+            column: end_lat
+        endLon:
+            type: float
+            column: end_lon
+    lifecycleCallbacks: {  }

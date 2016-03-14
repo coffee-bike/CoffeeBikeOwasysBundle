@@ -1,0 +1,18 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageA:
+    type: entity
+    table: null
+    repositoryClass: CoffeeBike\OwasysBundle\Entity\Message\MessageARepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        reason:
+            type: integer
+        info:
+            type: integer
+        km:
+            type: integer
+    lifecycleCallbacks: {  }

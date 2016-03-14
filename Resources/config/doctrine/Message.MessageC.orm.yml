@@ -1,0 +1,158 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageC:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        code:
+            type: integer
+        type:
+            type: integer
+        newKmSet:
+            type: integer
+            column: new_km_set
+        sleepTime:
+            type: integer
+            column: sleep_time
+        timeToSleep:
+            type: integer
+            column: time_to_sleep
+        timeToMove:
+            type: integer
+            column: time_to_move
+        timeToStop:
+            type: integer
+            column: time_to_stop
+        movEvent:
+            type: boolean
+            column: mov_event
+        kmEvent:
+            type: boolean
+            column: km_event
+        dataOffTime:
+            type: integer
+            column: data_off_time
+        kmAlert:
+            type: integer
+            column: km_alert
+        lpCycles:
+            type: integer
+            column: lp_cycles
+        extraInfo:
+            type: boolean
+            column: extra_info
+        moveStop:
+            type: integer
+            column: move_stop
+        moveSense:
+            type: integer
+            column: move_sense
+        moveTime:
+            type: integer
+            column: move_time
+        authorizedPhone:
+            type: string
+            length: 255
+            column: authorized_phone
+        sms:
+            type: boolean
+        bumpTreshold:
+            type: integer
+            column: bump_treshold
+        wakeUpMask:
+            type: integer
+            column: wake_up_mask
+        posToTx:
+            type: integer
+            column: pos_to_tx
+        timeToSendPos:
+            type: integer
+            column: time_to_send_pos
+        dataOff:
+            type: boolean
+            column: data_off
+        currentPlmn:
+            type: string
+            length: 255
+            column: current_plmn
+        currentApnUser:
+            type: string
+            length: 255
+            column: current_apn_user
+        currentApnPassword:
+            type: string
+            length: 255
+            column: current_apn_password
+        currentApn:
+            type: string
+            length: 255
+            column: current_apn
+        dns1:
+            type: string
+            length: 255
+        dns2:
+            type: string
+            length: 255
+        imsi:
+            type: string
+            length: 255
+        brokerIp:
+            type: string
+            length: 255
+            column: broker_ip
+        port:
+            type: integer
+        mqttKeepAlive:
+            type: integer
+            column: mqtt_keep_alive
+        mqttUser:
+            type: string
+            length: 255
+            column: mqtt_user
+        mqttPwd:
+            type: string
+            length: 255
+            column: mqtt_pwd
+        mqttPubPrefix:
+            type: string
+            length: 255
+            column: mqtt_pub_prefix
+        mqttSubPrefix:
+            type: string
+            length: 255
+            column: mqtt_sub_prefix
+        cleanSession:
+            type: boolean
+            column: clean_session
+        speedTreshold:
+            type: integer
+            column: speed_treshold
+        geofenceRadius:
+            type: integer
+            column: geofence_radius
+        geofenceLat:
+            type: float
+            column: geofence_lat
+        hwType:
+            type: integer
+            column: hw_type
+        owSampleRate:
+            type: integer
+            column: ow_sample_rate
+        owCalcRate:
+            type: integer
+            column: ow_calc_rate
+        owMask:
+            type: integer
+            column: ow_mask
+        noConnSucc:
+            type: integer
+            column: no_conn_succ
+        noConnFail:
+            type: integer
+            column: no_conn_fail
+    lifecycleCallbacks: {  }

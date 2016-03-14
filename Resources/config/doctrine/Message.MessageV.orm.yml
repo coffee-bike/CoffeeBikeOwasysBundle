@@ -1,0 +1,13 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageV:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        movement:
+            type: boolean
+    lifecycleCallbacks: {  }

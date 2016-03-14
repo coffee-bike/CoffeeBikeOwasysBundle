@@ -1,0 +1,29 @@
+CoffeeBike\OwasysBundle\Entity\Tracker:
+    type: entity
+    table: null
+    repositoryClass: CoffeeBike\OwasysBundle\Entity\TrackerRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        imei:
+            type: string
+            length: '15'
+        phoneNo:
+            type: string
+            length: 255
+        icc:
+            type: string
+            length: '20'
+        imsi:
+            type: string
+            length: '15'
+        alarm:
+            type: boolean
+        alarmPhoneNo:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

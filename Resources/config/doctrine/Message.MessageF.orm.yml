@@ -1,0 +1,53 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageF:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        externalVoltage:
+            type: float
+            column: external_voltage
+        internalVoltage:
+            type: float
+            column: internal_voltage
+        movement:
+            type: boolean
+        positionAccuracy:
+            type: float
+            column: position_accuracy
+        latitude:
+            type: float
+        longitude:
+            type: float
+        cellId:
+            type: bigint
+            column: cell_id
+        lac:
+            type: bigint
+        plmn:
+            type: integer
+        rssi:
+            type: integer
+        gpsCoverage:
+            type: boolean
+            column: gps_coverage
+        traveledKms:
+            type: bigint
+            column: traveled_kms
+        gpsSpeed:
+            type: float
+            column: gps_speed
+        lastValidPositionTimestamp:
+            type: bigint
+            column: last_valid_position_timestamp
+        outsideGeofenceFlag:
+            type: boolean
+            column: outside_geofence_flag
+        courseOverGround:
+            type: float
+            column: course_over_ground
+    lifecycleCallbacks: {  }

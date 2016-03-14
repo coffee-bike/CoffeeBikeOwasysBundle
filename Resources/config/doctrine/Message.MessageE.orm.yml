@@ -1,0 +1,17 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageE:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        errorCode:
+            type: integer
+            column: error_code
+        text:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

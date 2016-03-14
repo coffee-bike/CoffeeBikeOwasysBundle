@@ -1,0 +1,24 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageP:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        gX:
+            type: float
+        gY:
+            type: float
+        gZ:
+            type: float
+        lat:
+            type: float
+        lon:
+            type: float
+        lastGpsTs:
+            type: bigint
+            column: last_gps_ts
+    lifecycleCallbacks: {  }

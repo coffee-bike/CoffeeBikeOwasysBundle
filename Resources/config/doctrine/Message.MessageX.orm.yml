@@ -1,0 +1,23 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageX:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        version:
+            type: string
+            length: 255
+        imei:
+            type: string
+            length: '15'
+        imsi:
+            type: string
+            length: '15'
+        bootloader:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

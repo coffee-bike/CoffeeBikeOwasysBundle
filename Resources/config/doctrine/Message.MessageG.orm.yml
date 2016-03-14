@@ -1,0 +1,26 @@
+CoffeeBike\OwasysBundle\Entity\Message\MessageG:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        outOfGeofence:
+            type: boolean
+            column: out_of_geofence
+        geofenceLat:
+            type: float
+            column: geofence_lat
+        geofenceLon:
+            type: float
+            column: geofence_lon
+        currentLat:
+            type: float
+            column: current_lat
+        currentLon:
+            type: float
+            column: current_lon
+    lifecycleCallbacks: {  }
