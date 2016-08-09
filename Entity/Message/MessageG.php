@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageG
  */
-class MessageG
+class MessageG extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var boolean
      */
@@ -41,16 +37,6 @@ class MessageG
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set outOfGeofence
      *
      * @param boolean $outOfGeofence
@@ -66,7 +52,7 @@ class MessageG
     /**
      * Get outOfGeofence
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOutOfGeofence()
     {
@@ -89,7 +75,7 @@ class MessageG
     /**
      * Get geofenceLat
      *
-     * @return float 
+     * @return float
      */
     public function getGeofenceLat()
     {
@@ -112,7 +98,7 @@ class MessageG
     /**
      * Get geofenceLon
      *
-     * @return float 
+     * @return float
      */
     public function getGeofenceLon()
     {
@@ -135,7 +121,7 @@ class MessageG
     /**
      * Get currentLat
      *
-     * @return float 
+     * @return float
      */
     public function getCurrentLat()
     {
@@ -158,7 +144,7 @@ class MessageG
     /**
      * Get currentLon
      *
-     * @return float 
+     * @return float
      */
     public function getCurrentLon()
     {

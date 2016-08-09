@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageX
  */
-class MessageX
+class MessageX extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var string
      */
@@ -36,16 +32,6 @@ class MessageX
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set version
      *
      * @param string $version
@@ -61,7 +47,7 @@ class MessageX
     /**
      * Get version
      *
-     * @return string 
+     * @return string
      */
     public function getVersion()
     {
@@ -84,7 +70,7 @@ class MessageX
     /**
      * Get imei
      *
-     * @return string 
+     * @return string
      */
     public function getImei()
     {
@@ -107,7 +93,7 @@ class MessageX
     /**
      * Get imsi
      *
-     * @return string 
+     * @return string
      */
     public function getImsi()
     {
@@ -130,7 +116,7 @@ class MessageX
     /**
      * Get bootloader
      *
-     * @return string 
+     * @return string
      */
     public function getBootloader()
     {

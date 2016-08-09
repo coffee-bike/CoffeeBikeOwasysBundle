@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageS
  */
-class MessageS
+class MessageS extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var integer
      */
@@ -46,16 +42,6 @@ class MessageS
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set duration
      *
      * @param integer $duration
@@ -71,7 +57,7 @@ class MessageS
     /**
      * Get duration
      *
-     * @return integer 
+     * @return integer
      */
     public function getDuration()
     {
@@ -94,7 +80,7 @@ class MessageS
     /**
      * Get vPeak
      *
-     * @return float 
+     * @return float
      */
     public function getVPeak()
     {
@@ -117,7 +103,7 @@ class MessageS
     /**
      * Get startLat
      *
-     * @return float 
+     * @return float
      */
     public function getStartLat()
     {
@@ -140,7 +126,7 @@ class MessageS
     /**
      * Get startLon
      *
-     * @return float 
+     * @return float
      */
     public function getStartLon()
     {
@@ -163,7 +149,7 @@ class MessageS
     /**
      * Get endLat
      *
-     * @return float 
+     * @return float
      */
     public function getEndLat()
     {
@@ -186,7 +172,7 @@ class MessageS
     /**
      * Get endLon
      *
-     * @return float 
+     * @return float
      */
     public function getEndLon()
     {

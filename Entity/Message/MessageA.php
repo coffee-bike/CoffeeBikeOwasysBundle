@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageA
  */
-class MessageA
+class MessageA extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var integer
      */
@@ -31,16 +27,6 @@ class MessageA
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set reason
      *
      * @param integer $reason
@@ -56,7 +42,7 @@ class MessageA
     /**
      * Get reason
      *
-     * @return integer 
+     * @return integer
      */
     public function getReason()
     {
@@ -79,7 +65,7 @@ class MessageA
     /**
      * Get info
      *
-     * @return integer 
+     * @return integer
      */
     public function getInfo()
     {
@@ -102,7 +88,7 @@ class MessageA
     /**
      * Get km
      *
-     * @return integer 
+     * @return integer
      */
     public function getKm()
     {

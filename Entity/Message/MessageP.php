@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageP
  */
-class MessageP
+class MessageP extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var float
      */
@@ -46,16 +42,6 @@ class MessageP
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set gX
      *
      * @param float $gX
@@ -71,7 +57,7 @@ class MessageP
     /**
      * Get gX
      *
-     * @return float 
+     * @return float
      */
     public function getGX()
     {
@@ -94,7 +80,7 @@ class MessageP
     /**
      * Get gY
      *
-     * @return float 
+     * @return float
      */
     public function getGY()
     {
@@ -117,7 +103,7 @@ class MessageP
     /**
      * Get gZ
      *
-     * @return float 
+     * @return float
      */
     public function getGZ()
     {
@@ -140,7 +126,7 @@ class MessageP
     /**
      * Get lat
      *
-     * @return float 
+     * @return float
      */
     public function getLat()
     {
@@ -163,7 +149,7 @@ class MessageP
     /**
      * Get lon
      *
-     * @return float 
+     * @return float
      */
     public function getLon()
     {
@@ -186,7 +172,7 @@ class MessageP
     /**
      * Get lastGpsTs
      *
-     * @return integer 
+     * @return integer
      */
     public function getLastGpsTs()
     {

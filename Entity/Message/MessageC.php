@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageC
  */
-class MessageC
+class MessageC extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var integer
      */
@@ -251,16 +247,6 @@ class MessageC
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set code
      *
      * @param integer $code
@@ -276,7 +262,7 @@ class MessageC
     /**
      * Get code
      *
-     * @return integer 
+     * @return integer
      */
     public function getCode()
     {
@@ -299,7 +285,7 @@ class MessageC
     /**
      * Get type
      *
-     * @return integer 
+     * @return integer
      */
     public function getType()
     {
@@ -322,7 +308,7 @@ class MessageC
     /**
      * Get newKmSet
      *
-     * @return integer 
+     * @return integer
      */
     public function getNewKmSet()
     {
@@ -345,7 +331,7 @@ class MessageC
     /**
      * Get sleepTime
      *
-     * @return integer 
+     * @return integer
      */
     public function getSleepTime()
     {
@@ -368,7 +354,7 @@ class MessageC
     /**
      * Get timeToSleep
      *
-     * @return integer 
+     * @return integer
      */
     public function getTimeToSleep()
     {
@@ -391,7 +377,7 @@ class MessageC
     /**
      * Get timeToMove
      *
-     * @return integer 
+     * @return integer
      */
     public function getTimeToMove()
     {
@@ -414,7 +400,7 @@ class MessageC
     /**
      * Get timeToStop
      *
-     * @return integer 
+     * @return integer
      */
     public function getTimeToStop()
     {
@@ -437,7 +423,7 @@ class MessageC
     /**
      * Get movEvent
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getMovEvent()
     {
@@ -460,7 +446,7 @@ class MessageC
     /**
      * Get kmEvent
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getKmEvent()
     {
@@ -483,7 +469,7 @@ class MessageC
     /**
      * Get dataOffTime
      *
-     * @return integer 
+     * @return integer
      */
     public function getDataOffTime()
     {
@@ -506,7 +492,7 @@ class MessageC
     /**
      * Get kmAlert
      *
-     * @return integer 
+     * @return integer
      */
     public function getKmAlert()
     {
@@ -529,7 +515,7 @@ class MessageC
     /**
      * Get lpCycles
      *
-     * @return integer 
+     * @return integer
      */
     public function getLpCycles()
     {
@@ -552,7 +538,7 @@ class MessageC
     /**
      * Get extraInfo
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getExtraInfo()
     {
@@ -575,7 +561,7 @@ class MessageC
     /**
      * Get moveStop
      *
-     * @return integer 
+     * @return integer
      */
     public function getMoveStop()
     {
@@ -598,7 +584,7 @@ class MessageC
     /**
      * Get moveSense
      *
-     * @return integer 
+     * @return integer
      */
     public function getMoveSense()
     {
@@ -621,7 +607,7 @@ class MessageC
     /**
      * Get moveTime
      *
-     * @return integer 
+     * @return integer
      */
     public function getMoveTime()
     {
@@ -644,7 +630,7 @@ class MessageC
     /**
      * Get authorizedPhone
      *
-     * @return string 
+     * @return string
      */
     public function getAuthorizedPhone()
     {
@@ -667,7 +653,7 @@ class MessageC
     /**
      * Get sms
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getSms()
     {
@@ -690,7 +676,7 @@ class MessageC
     /**
      * Get bumpTreshold
      *
-     * @return integer 
+     * @return integer
      */
     public function getBumpTreshold()
     {
@@ -713,7 +699,7 @@ class MessageC
     /**
      * Get wakeUpMask
      *
-     * @return integer 
+     * @return integer
      */
     public function getWakeUpMask()
     {
@@ -736,7 +722,7 @@ class MessageC
     /**
      * Get posToTx
      *
-     * @return integer 
+     * @return integer
      */
     public function getPosToTx()
     {
@@ -759,7 +745,7 @@ class MessageC
     /**
      * Get timeToSendPos
      *
-     * @return integer 
+     * @return integer
      */
     public function getTimeToSendPos()
     {
@@ -782,7 +768,7 @@ class MessageC
     /**
      * Get dataOff
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getDataOff()
     {
@@ -805,7 +791,7 @@ class MessageC
     /**
      * Get currentPlmn
      *
-     * @return string 
+     * @return string
      */
     public function getCurrentPlmn()
     {
@@ -828,7 +814,7 @@ class MessageC
     /**
      * Get currentApnUser
      *
-     * @return string 
+     * @return string
      */
     public function getCurrentApnUser()
     {
@@ -851,7 +837,7 @@ class MessageC
     /**
      * Get currentApnPassword
      *
-     * @return string 
+     * @return string
      */
     public function getCurrentApnPassword()
     {
@@ -874,7 +860,7 @@ class MessageC
     /**
      * Get currentApn
      *
-     * @return string 
+     * @return string
      */
     public function getCurrentApn()
     {
@@ -897,7 +883,7 @@ class MessageC
     /**
      * Get dns1
      *
-     * @return string 
+     * @return string
      */
     public function getDns1()
     {
@@ -920,7 +906,7 @@ class MessageC
     /**
      * Get dns2
      *
-     * @return string 
+     * @return string
      */
     public function getDns2()
     {
@@ -943,7 +929,7 @@ class MessageC
     /**
      * Get imsi
      *
-     * @return string 
+     * @return string
      */
     public function getImsi()
     {
@@ -966,7 +952,7 @@ class MessageC
     /**
      * Get brokerIp
      *
-     * @return string 
+     * @return string
      */
     public function getBrokerIp()
     {
@@ -989,7 +975,7 @@ class MessageC
     /**
      * Get port
      *
-     * @return integer 
+     * @return integer
      */
     public function getPort()
     {
@@ -1012,7 +998,7 @@ class MessageC
     /**
      * Get mqttKeepAlive
      *
-     * @return integer 
+     * @return integer
      */
     public function getMqttKeepAlive()
     {
@@ -1035,7 +1021,7 @@ class MessageC
     /**
      * Get mqttUser
      *
-     * @return string 
+     * @return string
      */
     public function getMqttUser()
     {
@@ -1058,7 +1044,7 @@ class MessageC
     /**
      * Get mqttPwd
      *
-     * @return string 
+     * @return string
      */
     public function getMqttPwd()
     {
@@ -1081,7 +1067,7 @@ class MessageC
     /**
      * Get mqttPubPrefix
      *
-     * @return string 
+     * @return string
      */
     public function getMqttPubPrefix()
     {
@@ -1104,7 +1090,7 @@ class MessageC
     /**
      * Get mqttSubPrefix
      *
-     * @return string 
+     * @return string
      */
     public function getMqttSubPrefix()
     {
@@ -1127,7 +1113,7 @@ class MessageC
     /**
      * Get cleanSession
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getCleanSession()
     {
@@ -1150,7 +1136,7 @@ class MessageC
     /**
      * Get speedTreshold
      *
-     * @return integer 
+     * @return integer
      */
     public function getSpeedTreshold()
     {
@@ -1173,7 +1159,7 @@ class MessageC
     /**
      * Get geofenceRadius
      *
-     * @return integer 
+     * @return integer
      */
     public function getGeofenceRadius()
     {
@@ -1196,7 +1182,7 @@ class MessageC
     /**
      * Get geofenceLat
      *
-     * @return float 
+     * @return float
      */
     public function getGeofenceLat()
     {
@@ -1219,7 +1205,7 @@ class MessageC
     /**
      * Get hwType
      *
-     * @return integer 
+     * @return integer
      */
     public function getHwType()
     {
@@ -1242,7 +1228,7 @@ class MessageC
     /**
      * Get owSampleRate
      *
-     * @return integer 
+     * @return integer
      */
     public function getOwSampleRate()
     {
@@ -1265,7 +1251,7 @@ class MessageC
     /**
      * Get owCalcRate
      *
-     * @return integer 
+     * @return integer
      */
     public function getOwCalcRate()
     {
@@ -1288,7 +1274,7 @@ class MessageC
     /**
      * Get owMask
      *
-     * @return integer 
+     * @return integer
      */
     public function getOwMask()
     {
@@ -1311,7 +1297,7 @@ class MessageC
     /**
      * Get noConnSucc
      *
-     * @return integer 
+     * @return integer
      */
     public function getNoConnSucc()
     {
@@ -1334,7 +1320,7 @@ class MessageC
     /**
      * Get noConnFail
      *
-     * @return integer 
+     * @return integer
      */
     public function getNoConnFail()
     {

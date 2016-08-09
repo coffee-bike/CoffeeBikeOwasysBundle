@@ -2,33 +2,19 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageV
  */
-class MessageV
+class MessageV extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var boolean
      */
     private $movement;
 
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * Set movement
@@ -46,7 +32,7 @@ class MessageV
     /**
      * Get movement
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getMovement()
     {

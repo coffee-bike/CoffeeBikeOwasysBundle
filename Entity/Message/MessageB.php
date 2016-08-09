@@ -2,33 +2,19 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageB
  */
-class MessageB
+class MessageB extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var integer
      */
     private $byeCode;
 
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * Set byeCode
@@ -46,7 +32,7 @@ class MessageB
     /**
      * Get byeCode
      *
-     * @return integer 
+     * @return integer
      */
     public function getByeCode()
     {

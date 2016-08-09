@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageI
  */
-class MessageI
+class MessageI extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var integer
      */
@@ -46,16 +42,6 @@ class MessageI
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set iox
      *
      * @param integer $iox
@@ -71,7 +57,7 @@ class MessageI
     /**
      * Get iox
      *
-     * @return integer 
+     * @return integer
      */
     public function getIox()
     {
@@ -94,7 +80,7 @@ class MessageI
     /**
      * Get ioType
      *
-     * @return integer 
+     * @return integer
      */
     public function getIoType()
     {
@@ -117,7 +103,7 @@ class MessageI
     /**
      * Get ioVal
      *
-     * @return integer 
+     * @return integer
      */
     public function getIoVal()
     {
@@ -140,7 +126,7 @@ class MessageI
     /**
      * Get intsToSend
      *
-     * @return integer 
+     * @return integer
      */
     public function getIntsToSend()
     {
@@ -163,7 +149,7 @@ class MessageI
     /**
      * Get intsElapsed
      *
-     * @return integer 
+     * @return integer
      */
     public function getIntsElapsed()
     {
@@ -186,7 +172,7 @@ class MessageI
     /**
      * Get intsTotal
      *
-     * @return integer 
+     * @return integer
      */
     public function getIntsTotal()
     {

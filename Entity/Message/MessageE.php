@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageE
  */
-class MessageE
+class MessageE extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var integer
      */
@@ -24,16 +20,6 @@ class MessageE
      */
     private $text;
 
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * Set errorCode
@@ -51,7 +37,7 @@ class MessageE
     /**
      * Get errorCode
      *
-     * @return integer 
+     * @return integer
      */
     public function getErrorCode()
     {
@@ -74,7 +60,7 @@ class MessageE
     /**
      * Get text
      *
-     * @return string 
+     * @return string
      */
     public function getText()
     {

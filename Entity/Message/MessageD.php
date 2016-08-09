@@ -2,18 +2,14 @@
 
 namespace CoffeeBike\OwasysBundle\Entity\Message;
 
+use CoffeeBike\OwasysBundle\Entity\AbstractMessage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageD
  */
-class MessageD
+class MessageD extends AbstractMessage
 {
-    /**
-     * @var integer
-     */
-    private $id;
-
     /**
      * @var float
      */
@@ -96,16 +92,6 @@ class MessageD
 
 
     /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
      * Set externalVoltage
      *
      * @param float $externalVoltage
@@ -121,7 +107,7 @@ class MessageD
     /**
      * Get externalVoltage
      *
-     * @return float 
+     * @return float
      */
     public function getExternalVoltage()
     {
@@ -144,7 +130,7 @@ class MessageD
     /**
      * Get internalVoltage
      *
-     * @return float 
+     * @return float
      */
     public function getInternalVoltage()
     {
@@ -167,7 +153,7 @@ class MessageD
     /**
      * Get movement
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getMovement()
     {
@@ -190,7 +176,7 @@ class MessageD
     /**
      * Get positionAccuracy
      *
-     * @return float 
+     * @return float
      */
     public function getPositionAccuracy()
     {
@@ -213,7 +199,7 @@ class MessageD
     /**
      * Get latitude
      *
-     * @return float 
+     * @return float
      */
     public function getLatitude()
     {
@@ -236,7 +222,7 @@ class MessageD
     /**
      * Get longitude
      *
-     * @return float 
+     * @return float
      */
     public function getLongitude()
     {
@@ -259,7 +245,7 @@ class MessageD
     /**
      * Get cellId
      *
-     * @return integer 
+     * @return integer
      */
     public function getCellId()
     {
@@ -282,7 +268,7 @@ class MessageD
     /**
      * Get lac
      *
-     * @return integer 
+     * @return integer
      */
     public function getLac()
     {
@@ -305,7 +291,7 @@ class MessageD
     /**
      * Get plmn
      *
-     * @return integer 
+     * @return integer
      */
     public function getPlmn()
     {
@@ -328,7 +314,7 @@ class MessageD
     /**
      * Get rssi
      *
-     * @return integer 
+     * @return integer
      */
     public function getRssi()
     {
@@ -351,7 +337,7 @@ class MessageD
     /**
      * Get gpsCoverage
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getGpsCoverage()
     {
@@ -374,7 +360,7 @@ class MessageD
     /**
      * Get traveledKms
      *
-     * @return integer 
+     * @return integer
      */
     public function getTraveledKms()
     {
@@ -397,7 +383,7 @@ class MessageD
     /**
      * Get gpsSpeed
      *
-     * @return float 
+     * @return float
      */
     public function getGpsSpeed()
     {
@@ -420,7 +406,7 @@ class MessageD
     /**
      * Get lastValidPositionTimestamp
      *
-     * @return integer 
+     * @return integer
      */
     public function getLastValidPositionTimestamp()
     {
@@ -443,7 +429,7 @@ class MessageD
     /**
      * Get outsideGeofenceFlag
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOutsideGeofenceFlag()
     {
@@ -466,7 +452,7 @@ class MessageD
     /**
      * Get courseOverGround
      *
-     * @return float 
+     * @return float
      */
     public function getCourseOverGround()
     {
