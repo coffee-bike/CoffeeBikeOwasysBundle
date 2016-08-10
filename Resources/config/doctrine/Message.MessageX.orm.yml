@@ -1,12 +1,6 @@
 CoffeeBike\OwasysBundle\Entity\Message\MessageX:
     type: entity
     table: null
-    id:
-        id:
-            type: integer
-            id: true
-            generator:
-                strategy: AUTO
     fields:
         version:
             type: string

@@ -1,12 +1,6 @@
 CoffeeBike\OwasysBundle\Entity\Message\MessageK:
     type: entity
     table: null
-    id:
-        id:
-            type: integer
-            id: true
-            generator:
-                strategy: AUTO
     fields:
         km:
             type: bigint

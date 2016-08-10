@@ -1,12 +1,6 @@
 CoffeeBike\OwasysBundle\Entity\Message\MessageD:
     type: entity
     table: null
-    id:
-        id:
-            type: integer
-            id: true
-            generator:
-                strategy: AUTO
     fields:
         externalVoltage:
             type: float
