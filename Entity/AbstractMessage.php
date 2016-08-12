@@ -24,11 +24,16 @@ class AbstractMessage
      */
     private $timestamp;
 
+    /**
+     * @var Tracker
+     */
+    private $tracker;
+
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -51,7 +56,7 @@ class AbstractMessage
     /**
      * Get triggerSource
      *
-     * @return string 
+     * @return string
      */
     public function getTriggerSource()
     {
@@ -74,10 +79,33 @@ class AbstractMessage
     /**
      * Get timestamp
      *
-     * @return integer 
+     * @return integer
      */
     public function getTimestamp()
     {
         return $this->timestamp;
+    }
+
+    /**
+     * Set tracker
+     *
+     * @param Tracker $tracker
+     * @return AbstractMessage
+     */
+    public function setTracker(Tracker $tracker)
+    {
+        $this->tracker = $tracker;
+
+        return $this;
+    }
+
+    /**
+     * Get tracker
+     *
+     * @return Tracker
+     */
+    public function getTracker()
+    {
+        return $this->tracker;
     }
 }

@@ -16,3 +16,9 @@ CoffeeBike\OwasysBundle\Entity\AbstractMessage:
         timestamp:
             type: bigint
     lifecycleCallbacks: {  }
+    manyToOne:
+        tracker:
+            targetEntity: Tracker
+            joinColumn:
+                name: tracker_id
+                referencedColumnName: id
