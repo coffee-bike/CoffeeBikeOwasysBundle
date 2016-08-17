@@ -26,4 +26,6 @@ CoffeeBike\OwasysBundle\Entity\Tracker:
         alarmPhoneNo:
             type: string
             length: 255
+        sellingMode:
+            type: boolean
     lifecycleCallbacks: {  }
