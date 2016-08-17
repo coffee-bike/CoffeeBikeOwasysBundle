@@ -44,11 +44,16 @@ class Tracker
      */
     private $alarmPhoneNo;
 
+    /**
+     * @var boolean
+     */
+    private $sellingMode;
+
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -71,7 +76,7 @@ class Tracker
     /**
      * Get imei
      *
-     * @return string 
+     * @return string
      */
     public function getImei()
     {
@@ -94,7 +99,7 @@ class Tracker
     /**
      * Get phoneNo
      *
-     * @return string 
+     * @return string
      */
     public function getPhoneNo()
     {
@@ -117,7 +122,7 @@ class Tracker
     /**
      * Get icc
      *
-     * @return string 
+     * @return string
      */
     public function getIcc()
     {
@@ -140,7 +145,7 @@ class Tracker
     /**
      * Get imsi
      *
-     * @return string 
+     * @return string
      */
     public function getImsi()
     {
@@ -163,7 +168,7 @@ class Tracker
     /**
      * Get alarm
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getAlarm()
     {
@@ -186,10 +191,33 @@ class Tracker
     /**
      * Get alarmPhoneNo
      *
-     * @return string 
+     * @return string
      */
     public function getAlarmPhoneNo()
     {
         return $this->alarmPhoneNo;
+    }
+
+    /**
+     * Set sellingMode
+     *
+     * @param boolean $sellingMode
+     * @return Tracker
+     */
+    public function setSellingMode($sellingMode)
+    {
+        $this->sellingMode = $sellingMode;
+
+        return $this;
+    }
+
+    /**
+     * Get sellingMode
+     *
+     * @return bool
+     */
+    public function getSellingMode()
+    {
+        return $this->sellingMode;
     }
 }
