@@ -42,12 +42,12 @@ class Tracker
     /**
      * @var string
      */
-    private $alarmPhoneNo;
+    private $alarmPhoneNo = null;
 
     /**
      * @var boolean
      */
-    private $sellingMode;
+    private $sellingMode = 1;
 
 
     /**
