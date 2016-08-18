@@ -13,7 +13,7 @@ class MessageF extends AbstractMessage
     /**
      * @var float
      */
-    private $externalVoltage;
+    private $externalVoltage = null;
 
     /**
      * @var float

@@ -5,6 +5,7 @@ CoffeeBike\OwasysBundle\Entity\Message\MessageF:
         externalVoltage:
             type: float
             column: external_voltage
+            nullable: true
         internalVoltage:
             type: float
             column: internal_voltage
