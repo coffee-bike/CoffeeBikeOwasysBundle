@@ -128,6 +128,16 @@ class Tracker
     {
         return $this->icc;
     }
+    
+    /**
+     * Get last 5 elements of icc
+     * 
+     * @return string
+     */
+     public function getShortIcc()
+     {
+         return substr($this->icc, -5);
+     }
 
     /**
      * Set imsi
