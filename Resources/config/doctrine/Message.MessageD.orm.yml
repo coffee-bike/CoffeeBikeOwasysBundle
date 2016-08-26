@@ -10,38 +10,52 @@ CoffeeBike\OwasysBundle\Entity\Message\MessageD:
             column: internal_voltage
         movement:
             type: boolean
+            nullable: true
         positionAccuracy:
-            type: float
+            type: string
             column: position_accuracy
+            nullable: true
         latitude:
             type: float
+            nullable: true
         longitude:
             type: float
+            nullable: true
         cellId:
             type: bigint
             column: cell_id
+            nullable: true
         lac:
             type: bigint
+            nullable: true
         plmn:
             type: integer
+            nullable: true
         rssi:
             type: integer
+            nullable: true
         gpsCoverage:
             type: boolean
             column: gps_coverage
+            nullable: true
         traveledKms:
             type: bigint
             column: traveled_kms
+            nullable: true
         gpsSpeed:
             type: float
             column: gps_speed
+            nullable: true
         lastValidPositionTimestamp:
             type: bigint
             column: last_valid_position_timestamp
+            nullable: true
         outsideGeofenceFlag:
             type: boolean
             column: outside_geofence_flag
+            nullable: true
         courseOverGround:
             type: float
             column: course_over_ground
+            nullable: true
     lifecycleCallbacks: {  }
