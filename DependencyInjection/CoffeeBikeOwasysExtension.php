@@ -24,5 +24,8 @@ class CoffeeBikeOwasysExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $container->setParameter('coffee_bike_owasys.server.address', $config['server']['address']);
     }
+
 }

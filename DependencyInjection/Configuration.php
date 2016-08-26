@@ -3,6 +3,7 @@
 namespace CoffeeBike\OwasysBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
+use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
@@ -20,9 +21,15 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('coffee_bike_owasys');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+            ->arrayNode('server')
+            ->children()
+            ->scalarNode('address')
+            ->cannotBeEmpty()
+            ->defaultValue('localhost')
+            ->isRequired()
+            ->end();
 
         return $treeBuilder;
     }
