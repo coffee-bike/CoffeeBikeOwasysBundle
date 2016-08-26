@@ -7,6 +7,8 @@ CoffeeBike\OwasysBundle\Entity\Message\MessageA:
             type: integer
         info:
             type: integer
+            nullable: true
         km:
             type: integer
+            nullable: true
     lifecycleCallbacks: {  }
