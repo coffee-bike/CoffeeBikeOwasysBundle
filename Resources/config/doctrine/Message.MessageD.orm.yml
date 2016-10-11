@@ -53,6 +53,7 @@ CoffeeBike\OwasysBundle\Entity\Message\MessageD:
         outsideGeofenceFlag:
             type: boolean
             column: outside_geofence_flag
+            nullable: true
         courseOverGround:
             type: float
             column: course_over_ground
