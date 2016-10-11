@@ -83,7 +83,7 @@ class MessageD extends AbstractMessage
     /**
      * @var boolean
      */
-    private $outsideGeofenceFlag;
+    private $outsideGeofenceFlag = null;
 
     /**
      * @var float
