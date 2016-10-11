@@ -30,4 +30,7 @@ CoffeeBike\OwasysBundle\Entity\Tracker:
         sellingMode:
             type: boolean
             nullable: true
+        sellingModeDate:
+            type: datetime
+            nullable: true
     lifecycleCallbacks: {  }
