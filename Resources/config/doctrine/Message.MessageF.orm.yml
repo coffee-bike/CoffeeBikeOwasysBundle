@@ -9,6 +9,7 @@ CoffeeBike\OwasysBundle\Entity\Message\MessageF:
         internalVoltage:
             type: string
             column: internal_voltage
+            nullable: true
         movement:
             type: boolean
             nullable: true
