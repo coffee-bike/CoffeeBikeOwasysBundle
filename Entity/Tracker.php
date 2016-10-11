@@ -49,6 +49,11 @@ class Tracker
      */
     private $sellingMode = 1;
 
+    /**
+     * @var \DateTime
+     */
+    private $sellingModeDate = 1;
+
 
     /**
      * Get id
@@ -229,5 +234,28 @@ class Tracker
     public function getSellingMode()
     {
         return $this->sellingMode;
+    }
+
+    /**
+     * Set sellingModeDate
+     *
+     * @param \DateTime $sellingModeDate
+     * @return Tracker
+     */
+    public function setSellingModeDate(\DateTime $sellingModeDate)
+    {
+        $this->sellingModeDate = $sellingModeDate;
+
+        return $this;
+    }
+
+    /**
+     * Get sellingModeDate
+     *
+     * @return \DateTime
+     */
+    public function getSellingModeDate()
+    {
+        return $this->sellingModeDate;
     }
 }
