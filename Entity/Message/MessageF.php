@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * MessageF
+ * TODO: Remove bullshit attributes (those from MessageD)
  */
 class MessageF extends AbstractMessage
 {
@@ -18,7 +19,7 @@ class MessageF extends AbstractMessage
     /**
      * @var float
      */
-    private $internalVoltage;
+    private $internalVoltage = null;
 
     /**
      * @var boolean
