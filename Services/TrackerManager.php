@@ -24,7 +24,7 @@ class TrackerManager
     {
         $client = new \Mosquitto\Client();
         $client->connect($this->container->getParameter('coffee_bike_owasys.server.address'), 8883, 5);
-        $client->publish('sub/'. $tracker->getImei(), $message, 1, true);
+        $client->publish('sub/'. $tracker->getImei(), $message, 1, false);
         $client->disconnect();
 
     }
