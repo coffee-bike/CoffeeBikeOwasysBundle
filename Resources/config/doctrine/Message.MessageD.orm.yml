@@ -47,7 +47,7 @@ CoffeeBike\OwasysBundle\Entity\Message\MessageD:
             column: gps_speed
             nullable: true
         lastValidPositionTimestamp:
-            type: bigint
+            type: string
             column: last_valid_position_timestamp
             nullable: true
         outsideGeofenceFlag:
