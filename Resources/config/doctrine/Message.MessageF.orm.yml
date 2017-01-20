@@ -31,7 +31,7 @@ CoffeeBike\OwasysBundle\Entity\Message\MessageF:
             type: bigint
             nullable: true
         plmn:
-            type: integer
+            type: string
             nullable: true
         rssi:
             type: integer
