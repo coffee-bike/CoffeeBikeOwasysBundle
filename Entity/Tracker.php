@@ -309,7 +309,7 @@ class Tracker
      *
      * @return float
      */
-    public function getdefaultLongitude()
+    public function getDefaultLongitude()
     {
         return $this->defaultLongitude;
     }
