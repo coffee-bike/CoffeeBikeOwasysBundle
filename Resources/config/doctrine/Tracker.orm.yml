@@ -33,4 +33,10 @@ CoffeeBike\OwasysBundle\Entity\Tracker:
         sellingModeDate:
             type: datetime
             nullable: true
+        defaultLatitude:
+            type: float
+            nullable: true
+        defaultLongitude:
+            type: float
+            nullable: true
     lifecycleCallbacks: {  }
