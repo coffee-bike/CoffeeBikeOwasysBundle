@@ -54,6 +54,15 @@ class Tracker
      */
     private $sellingModeDate = 1;
 
+    /**
+     * @var float
+     */
+    private $defaultLatitude;
+
+    /**
+     * @var float
+     */
+    private $defaultLongitude;
 
     /**
      * Get id
@@ -258,4 +267,51 @@ class Tracker
     {
         return $this->sellingModeDate;
     }
+
+    /**
+     * Set defaultLatitude
+     *
+     * @param float $defaultLatitude
+     * @return Tracker
+     */
+    public function setDefaultLatitude($defaultLatitude)
+    {
+        $this->defaultLatitude = $defaultLatitude;
+
+        return $this;
+    }
+
+    /**
+     * Get getDefaultLatitude
+     *
+     * @return float
+     */
+    public function getDefaultLatitude()
+    {
+        return $this->defaultLatitude;
+    }
+
+    /**
+     * Set defaultLongitude
+     *
+     * @param float $defaultLongitude
+     * @return Tracker
+     */
+    public function setDefaultLongitude($defaultLongitude)
+    {
+        $this->defaultLongitude = $defaultLongitude;
+
+        return $this;
+    }
+
+    /**
+     * Get defaultLongitude
+     *
+     * @return float
+     */
+    public function getDefaultLongitude()
+    {
+        return $this->defaultLongitude;
+    }
+
 }
