@@ -65,6 +65,11 @@ class Tracker
     private $defaultLongitude;
 
     /**
+     * @var integer
+     */
+    private $amountOfAlarmMessages = 0;
+
+    /**
      * Get id
      *
      * @return integer
@@ -314,4 +319,36 @@ class Tracker
         return $this->defaultLongitude;
     }
 
+    /**
+     * Set amountOfAlarmMessages
+     *
+     * @param integer $amountOfAlarmMessages
+     * @return Tracker
+     */
+    public function setAmountOfAlarmMessages($amountOfAlarmMessages)
+    {
+        $this->amountOfAlarmMessages = $amountOfAlarmMessages;
+
+        return $this;
+    }
+
+    /**
+     * Get amountOfAlarmMessages
+     *
+     * @return float
+     */
+    public function getAmountOfAlarmMessages()
+    {
+        return $this->amountOfAlarmMessages;
+    }
+
+    /**
+     * Increment alarm counter
+     *
+     * @return int
+     */
+    public function incrAlarmCounter()
+    {
+        return $this->amountOfAlarmMessages;
+    }
 }
