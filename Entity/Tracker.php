@@ -349,6 +349,7 @@ class Tracker
      */
     public function incrAlarmCounter()
     {
+        $this->amountOfAlarmMessages++;
         return $this->amountOfAlarmMessages;
     }
 }
