@@ -39,4 +39,6 @@ CoffeeBike\OwasysBundle\Entity\Tracker:
         defaultLongitude:
             type: float
             nullable: true
+        amountOfAlarmMessages:
+            type: integer
     lifecycleCallbacks: {  }
